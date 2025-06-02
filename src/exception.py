@@ -1,6 +1,6 @@
 #provides variables and functions that interact with the Python runtime environment
 import sys 
-import logging
+from logger import logging
 
 def error_message_detail(error, error_detail:sys):
     _,_,error_detail = error_detail.exc_info()
